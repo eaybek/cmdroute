@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="cmdroute",
-    version="0.0.3",
+    version="0.0.3.1",
     author="Erdem Aybek",
     author_email="eaybek@gmail.com",
     description=" ".join(["pythonic cmd utility"]),
