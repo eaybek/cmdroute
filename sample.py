@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from cmdroute import entrypoint, dispacth
+from cmdroute import entrypoint, dispatch
 
 
 @entrypoint()
@@ -17,4 +17,4 @@ def greetings(name, greeting="Hello"):
     print(greeting + ", " + name)
 
 
-dispacth()
+dispatch()

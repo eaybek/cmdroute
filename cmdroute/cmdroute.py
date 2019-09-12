@@ -16,7 +16,7 @@ def entrypoint():
     return decorator
 
 
-def dispacth(args=None):
+def dispatch(args=None):
     if args is None:
         import sys
 
