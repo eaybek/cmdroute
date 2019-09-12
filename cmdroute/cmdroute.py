@@ -27,9 +27,14 @@ def dispatch(args=None):
     for rawarg in args[2:]:
         if "=" in rawarg:
             kw, arg = rawarg.split("=")
+            if "," in arg:
+                arg = arg.split(",")
             target_kwargs[kw] = arg
         else:
-            arg = rawarg
+            if "," in rawarg:
+                arg = rawarg.split(",")
+            else:
+                arg = rawarg
             target_args.append(arg)
 
     for epoint in entrypoints:

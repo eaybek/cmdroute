@@ -1,2 +1,2 @@
 from .builtins import help
-from .cmdroute import entrypoint, dispacth
+from .cmdroute import entrypoint, dispatch
